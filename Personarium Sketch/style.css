@@ -1,0 +1,206 @@
+
+/* Font Declarations */
+@font-face {
+    font-family: 'Redaction';
+    src: url('Fonts/Redaction-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Redaction-10';
+    src: url('Fonts/Redaction_10-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Redaction-20';
+    src: url('Fonts/Redaction_20-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Redaction-35';
+    src: url('Fonts/Redaction_35-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Redaction-50';
+    src: url('Fonts/Redaction_50-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Redaction-70';
+    src: url('Fonts/Redaction_70-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Redaction-100';
+    src: url('Fonts/Redaction_100-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0;
+}
+
+#title {
+    font-family: 'Redaction-Italic', Arial, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin: 20px;
+    color: #333;
+}
+
+canvas {
+    display: block;
+    margin: 10px auto;
+    background: #FFFFFF;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+#instructions {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Redaction-Italic', Arial, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+#skinvsmask {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 20px;
+}
+
+#skin, #mask {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+#skin h3, #mask h3 {
+    font-family: 'Redaction-20', Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#skin ul, #mask ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+#skin li, #mask li {
+    font-family: 'Redaction-10', Arial, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    margin: 8px 0;
+    position: relative;
+    padding-left: 15px;
+    color: #555;
+}
+
+#skin li::before, #mask li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333;
+    font-weight: bold;
+}
+
+#button {
+    text-align: center;
+    margin: 20px;
+}
+
+#submitButton {
+    font-family: 'Redaction-35', Arial, sans-serif;
+    font-style: italic;
+    font-size: 42px;
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#submitButton:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+#submitButton:active {
+    color: #000;
+}
+
+#canvas-container {
+    display: none;
+    /* Hidden by default, shown when button is clicked */
+    text-align: center;
+    margin: 20px;
+}
+
+#canvas-section {
+    display: none;
+    /* Hidden by default, shown when button is clicked */
+    text-align: center;
+    margin: 20px;
+} 
+
+#p5jscanvas {
+    display: block;
+    font-family: 'Redaction-10', Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#verbs {
+    font-family: 'Redaction-35', Arial, sans-serif;
+    display: none;
+    position: relative;
+    /* Hidden by default, shown when button is clicked */
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#skin-can {
+    font-size: 28px;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: scrollText 40s linear infinite;
+    margin: 0;
+    padding: 15px 0;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    line-height: 1.2;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
