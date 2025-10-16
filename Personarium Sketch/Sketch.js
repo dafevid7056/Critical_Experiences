@@ -123,7 +123,7 @@ function preload() {
     images[59] = loadImage('Personarium_Finales/F6_Ed_Wireframe_6.png');
 
     // BACKGROUND IMAGE (60) - will be repeated 6 times
-    images[60] = loadImage('Personarium_Images/Fondo Large.jpeg');
+    images[60] = loadImage('Personarium_Finales/Fondo Large.jpeg');
 }
 
 /* -------------------------------------------------------------------------- */
