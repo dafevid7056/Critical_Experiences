@@ -188,7 +188,7 @@ canvas {
     font-size: 28px;
     font-weight: bold;
     white-space: nowrap;
-    animation: scrollText 40s linear infinite;
+    animation: scrollText 300s linear infinite;
     margin: 0;
     padding: 15px 0;
     color: #333;
